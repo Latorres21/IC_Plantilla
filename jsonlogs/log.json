@@ -1,0 +1,87 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "templatetestingcypresscucumber;iniciar-sesion-ic",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Iniciar sesion IC",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "Se ingresa a IC",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "Desplegar el formulario de inicio de sesion.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "templatetestingcypresscucumber;iniciar-sesion-ic-error",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Iniciar sesion IC Error",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Se ingresa a IC Error.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Desplegar el formulario de inicio de sesion Error.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "templatetestingcypresscucumber",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TemplateTestingCypressCucumber",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\auth_example.feature"
+  }
+]
