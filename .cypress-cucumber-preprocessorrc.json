@@ -12,6 +12,7 @@
       "enabled": true
     },
     "stepDefinitions": [
-      "cypress/e2e/step_definitions/**.{js,ts}"
+      "cypress/e2e/step_definitions/**.{js,ts}",
+      "cypress/e2e/step_definitions/**/suites/**/*.{js,ts}"
     ]
   }

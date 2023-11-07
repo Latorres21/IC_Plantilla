@@ -1,4 +1,6 @@
-Cypress.Commands.add("Authentication" , ( credentials )=>{
+import { GlobalCrential } from "../selectors/AuthenticationSelectos/gobalCredentials";
+
+Cypress.Commands.add("Authentication" , ( credentials = GlobalCrential )=>{
     cy.fixture("DOM/Login").then(( item ) =>{
             cy.session("authenticationSession", () => {
                 cy.visit("/")

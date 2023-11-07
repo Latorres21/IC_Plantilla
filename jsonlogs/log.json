@@ -4,35 +4,61 @@
     "elements": [
       {
         "description": "",
-        "id": "templatetestingcypresscucumber;iniciar-sesion-ic",
+        "id": "1-authentication;login:-datos-validos-(exitoso)",
         "keyword": "Scenario",
         "line": 2,
-        "name": "Iniciar sesion IC",
+        "name": "Login: Datos validos (Exitoso)",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 3,
-            "name": "Se ingresa a IC",
+            "name": "El usuario se encuentra en la pagina de login exitoso",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 1859000000
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "Ingresar un usuario y contraseña valido.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 642000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Al hacer click en iniciar sesion.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 4,
-            "name": "Desplegar el formulario de inicio de sesion.",
+            "line": 6,
+            "name": "que se direccione a la pagina principal",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 1149000000
             }
           }
         ],
@@ -41,35 +67,111 @@
       },
       {
         "description": "",
-        "id": "templatetestingcypresscucumber;iniciar-sesion-ic-error",
+        "id": "1-authentication;login:-datos-validos-inválidos-(fallido)",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Iniciar sesion IC Error",
+        "line": 7,
+        "name": "Login: Datos validos Inválidos (Fallido)",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Se ingresa a IC Error.",
+            "keyword": "Given ",
+            "line": 8,
+            "name": "El usuario se encuentra en la pagina de login fallido",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 214000000
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Ingresar un usuario y contraseña invalida o vacia.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3661000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Al hacer click en iniciar sesion fallido.",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
-            "name": "Desplegar el formulario de inicio de sesion Error.",
+            "line": 11,
+            "name": "Se espera que cargue una alerta o mensaje indicacando que no fue posible iniciar sesion debido a las crendenciales invalidas.",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 158000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "1-authentication;validar-el-enlance-para-restablecer-contraseña",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Validar el enlance para restablecer contraseña",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "Un usuario esta en login y requiere restablecer contraseña",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Cuando le da en el boton de restablecer contraseña",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Que se redireccione a la pagina para realizarlo",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
             }
           }
         ],
@@ -77,11 +179,11 @@
         "type": "scenario"
       }
     ],
-    "id": "templatetestingcypresscucumber",
+    "id": "1-authentication",
     "line": 1,
     "keyword": "Feature",
-    "name": "TemplateTestingCypressCucumber",
+    "name": "1-Authentication",
     "tags": [],
-    "uri": "cypress\\e2e\\features\\auth_example.feature"
+    "uri": "cypress\\e2e\\features\\authentication.feature"
   }
 ]
