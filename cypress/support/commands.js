@@ -7,6 +7,6 @@ Cypress.Commands.add("Authentication" , ( credentials = GlobalCrential )=>{
                 cy.get( item.username ).type( credentials.username );
                 cy.get( item.password ).type( credentials.password );
                 cy.get( item.submitAuth ).click();
-            } );
+            });
         });
 });
