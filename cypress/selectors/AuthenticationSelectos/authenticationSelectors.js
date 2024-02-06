@@ -1,9 +1,16 @@
 export const authInputSelector = [
     '#username','#password'   
 ]
+
+
 export const authButtonSelector = {
     authButton : 'INGRESAR'
 }
+
+export const validatePD = {
+    byElementPD: '.InformacionPersonal_body__m6Hgz'
+}
+
 export const validateRedirectLogin = {
     url:'https://192.168.218.243:8444/ic_formpeda',
     byElement: '.MuiIconButton-edgeStart',

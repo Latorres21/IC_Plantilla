@@ -13,4 +13,9 @@ Feature: 1-Authentication
     Given Un usuario esta en login y requiere restablecer contraseña
     When Cuando le da en el boton de restablecer contraseña
     Then Que se redireccione a la pagina para realizarlo
+  Scenario: Ingreso autorizacion trata de datos 
+    Given El usuario se encuentra en el login
+    When Ingresa las credenciales
+    And Al usuario darle click al boton datos personales
+    Then Que se vea el formulario de autorizacion 
 

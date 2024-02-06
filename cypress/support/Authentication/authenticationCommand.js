@@ -1,4 +1,4 @@
-import { authButtonSelector, authInputSelector, resetPassword, validateRedirectLogin } from "../../selectors/AuthenticationSelectos/authenticationSelectors";
+import { authButtonSelector, authInputSelector, resetPassword, validatePD, validateRedirectLogin } from "../../selectors/AuthenticationSelectos/authenticationSelectors";
 import { GlobalCrential } from "../../selectors/AuthenticationSelectos/gobalCredentials";
 
 Cypress.Commands.add('setFieldsAuth', (setCredentials = GlobalCrential ) => {
@@ -12,8 +12,22 @@ Cypress.Commands.add('setFieldsAuth', (setCredentials = GlobalCrential ) => {
 Cypress.Commands.add('buttonComponent', ()=> {
     return cy.get(`button:contains("${authButtonSelector.authButton}")`).click()
 })
+
+
+
+Cypress.Commands.add('buttonDP', ()=> {
+    return cy.get('.MuiListItemButton-root').eq(2).click()
+})
+
+
+
+Cypress.Commands.add('validatePersonalDates', () => cy.get(validatePD.byElementPD).should('contains.text', 'Información Basica'))
+
+
+
 Cypress.Commands.add('validateLoginByUrl', ()=> cy.url().should('include', validateRedirectLogin.url  )  )
 Cypress.Commands.add('validateLoginByElement' , () => cy.get(validateRedirectLogin.byElement).should('be.visible')  )
+
 Cypress.Commands.add('validateByError' , ()=> {
     cy.get(`button:contains("${authButtonSelector.authButton}")`).click().then(()=> {
         cy.get(validateRedirectLogin.byError.popUp).should('be.visible')

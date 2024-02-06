@@ -1,4 +1,4 @@
 export const GlobalCrential = {
-    username: '66993871',
-    password: 'qxwHb9vtwu'
+    username: '1061793979',
+    password: 'gjpcjzZt2c'
 }
